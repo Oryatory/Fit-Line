@@ -1,0 +1,14 @@
+@use '../util' as u;
+
+.red-span {
+    color: var(--red);
+}
+
+.box-shadow {
+    box-shadow: 0px 4px 30px rgba(80, 171, 255, 0.5);
+}
+
+.bold {
+    font-weight: 700;
+}
+
