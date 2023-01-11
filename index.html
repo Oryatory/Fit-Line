@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>FitLine - поверните время вспять!</title>
 </head>
 <body>
@@ -64,9 +65,10 @@
                                 <input class="form-input" type="text" placeholder="Ваш номер">
                             </label>
                             <button class="button-gradient box-shadow">ЗАКАЗАТЬ СО СКИДКОЙ</button>
-                            <label class="agreement">
-                                <input type="radio">
-                                Я даю согласие на обработку персональных данных
+                            
+                            <input class="form-radio" id="agreement" type="checkbox">
+                            <label class="agreement" for="agreement">
+                                <p>Я даю согласие на обработку персональных данных</p> 
                             </label>
                         </form>
                         
@@ -312,8 +314,7 @@
                         </div>
             <div class="container">
                 <div class="igredients__wrapper">
-                    <div class="ingredients__intro">
-                        <div class="ingredients__intro__text">
+                    <div class="ingredients__intro__text">
                             <h2>В чем уникальность Ultimate Young?</h2>
                             <p>Ultimate Young – двухфазный косметический продукт,<br> состоящий<br>
                                 из жидкости и гелеобразного компонента,<br> лечебно-декоративное<br>
@@ -325,10 +326,7 @@
                                 результат меньше чем за 3 минуты благодаря
                                 эксклюзивной концепции транспортировки
                                 питательных веществ NTC.</p>
-                        </div>
-                        
                     </div>
-
                     <div class="ingredients__internals">
                         <h2>Свойства активных
                             ингредиентов:</h2>
@@ -389,9 +387,226 @@
                     </div>
 
                     <div class="ingredients__use">
-                        <button></button>
-                        <h4></h4>
-                        <p></p>
+                        <button class="button-gradient">ПОЛНЫЙ СПИСОК ИНГРЕДИЕНТОВ</button>
+                        <h4>Способ применения:</h4>
+                        <p>Чтобы получить все преимущества продукта, перед каждым<br>
+                            использованием интенсивно встряхните Ultimate Young<br>
+                            (не менее 10-15 секунд), чтобы активировать его.<br>
+                            Ultimate Young нанести локально на область морщин тонким<br>
+                            слоем равномерно на необходимый участок кожи, мягко вбивая<br> кончиками пальцев.<br>
+                            Можно применять<br>
+                            на любом желаемом
+                            участке кожи, который<br>
+                             Вы хотите эффективно улучшить; например,<br>
+                            наносить на лоб, веки, шею, декольте,<br>
+                             носогубные складки.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="ingredients__red-area">
+                <p>Ultimate Young - Ваш личный секрет молодости и красоты</p>
+            </div>
+        </section>
+
+        <section class="resultstwo">
+            <div class="container">
+                <div class="resultstwo__wrapper">
+                    <h2 class="resultstwo__header">Результаты</h2>
+                    <div class="resultstwo__images">
+                        <div class="resultstwo__images__element">
+                            <img src="./assets/images/results-image1.png" alt="">
+                            <p>До / после</p>
+                        </div>
+                        <div class="resultstwo__images__element">
+                            <img src="./assets/images/results-image2.png" alt="">
+                            <p>До / после</p>
+                        </div>
+                        <div class="resultstwo__images__element">
+                            <img src="./assets/images/results-image3.png" alt="">
+                            <p>До / после</p>
+                        </div>
+                        <div class="resultstwo__images__element">
+                            <img src="./assets/images/results-image4.png" alt="">
+                            <p>До / после</p>
+                        </div>
+                        <div class="resultstwo__images__element">
+                            <img src="./assets/images/results-image5.png" alt="">
+                            <p>До / после</p>
+                        </div>
+                        <div class="resultstwo__images__element">
+                            <img src="./assets/images/results-image6.png" alt="">
+                            <p>До / после</p>
+                        </div>
+                    </div>
+                    <div class="resultstwo__bottom-wrapper">
+                        <p class="resultstwo__bottom-text">Ultimate Young – безоперационный экспресс-лифтинг, позволяющий получить мгновенный
+                            результат меньше чем за 3 минуты благодаря
+                            эксклюзивной концепции транспортировки
+                            питательных веществ NTC.</p>
+    
+                        <div class="resultstwo__red-area">
+                            <p class="resultstwo__red-area__text">
+                                ТОЛЬКО РЕАЛЬНЫЕ РЕЗУЛЬТАТЫ, 
+                            </p>
+    
+                            <p class="resultstwo__red-area__text">
+                                ПОПРОБУЙТЕ  И УБЕДИТЕСЬ ПРЯМО СЕЙЧАС!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__wrapper">
+                    <h2>Отзывы реальных клиентов</h2>
+                </div>
+            </div>
+            <div class="reviews__slider-container">
+                <div class="reviews__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="reviews__slider__element box-shadow">
+                                <img src="./assets/images/client-image1.png" alt="">
+                                <h4>Ирина 37 лет</h4>
+                                <p>Чтобы получить все преимущества продукта, перед каждым
+                                    использованием интенсивно встряхните Ultimate Young
+                                    (не менее 10-15 секунд), чтобы активировать его.
+                                    Ultimate Young нанести локально на область морщин тонким
+                                    слоем равномерно на необходимый участок кожи, мягко вбивая
+                                    кончиками пальцев. Можно применять 
+                                    на любом желаемом
+                                    участке кожи, который
+                                     Вы хотите эффективно улучшить; например,
+                                    наносить на лоб, веки, шею, декольте,
+                                     носогубные складки.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slider__element box-shadow">
+                                <img src="./assets/images/client-image2.png" alt="">
+                                <h4>Людмила 41 год</h4>
+                                <p>Чтобы получить все преимущества продукта, перед каждым
+                                    использованием интенсивно встряхните Ultimate Young
+                                    (не менее 10-15 секунд), чтобы активировать его.
+                                    Ultimate Young нанести локально на область морщин тонким
+                                    слоем равномерно на необходимый участок кожи, мягко вбивая
+                                    кончиками пальцев. Можно применять 
+                                    на любом желаемом
+                                    участке кожи, который
+                                     Вы хотите эффективно улучшить; например,
+                                    наносить на лоб, веки, шею, декольте,
+                                     носогубные складки.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slider__element box-shadow">
+                                <img src="./assets/images/client-image1.png" alt="">
+                                <h4>Настя 23 года</h4>
+                                <p>Чтобы получить все преимущества продукта, перед каждым
+                                    использованием интенсивно встряхните Ultimate Young
+                                    (не менее 10-15 секунд), чтобы активировать его.
+                                    Ultimate Young нанести локально на область морщин тонким
+                                    слоем равномерно на необходимый участок кожи, мягко вбивая
+                                    кончиками пальцев. Можно применять 
+                                    на любом желаемом
+                                    участке кожи, который
+                                     Вы хотите эффективно улучшить; например,
+                                    наносить на лоб, веки, шею, декольте,
+                                     носогубные складки.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slider__element box-shadow">
+                                <img src="./assets/images/client-image2.png" alt="">
+                                <h4>Тётя 55 год</h4>
+                                <p>Чтобы получить все преимущества продукта, перед каждым
+                                    использованием интенсивно встряхните Ultimate Young
+                                    (не менее 10-15 секунд), чтобы активировать его.
+                                    Ultimate Young нанести локально на область морщин тонким
+                                    слоем равномерно на необходимый участок кожи, мягко вбивая
+                                    кончиками пальцев. Можно применять 
+                                    на любом желаемом
+                                    участке кожи, который
+                                     Вы хотите эффективно улучшить; например,
+                                    наносить на лоб, веки, шею, декольте,
+                                     носогубные складки.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__slider__element box-shadow">
+                                <img src="./assets/images/client-image1.png" alt="">
+                                <h4>Бабушка 62 года</h4>
+                                <p>Чтобы получить все преимущества продукта, перед каждым
+                                    использованием интенсивно встряхните Ultimate Young
+                                    (не менее 10-15 секунд), чтобы активировать его.
+                                    Ultimate Young нанести локально на область морщин тонким
+                                    слоем равномерно на необходимый участок кожи, мягко вбивая
+                                    кончиками пальцев. Можно применять 
+                                    на любом желаемом
+                                    участке кожи, который
+                                     Вы хотите эффективно улучшить; например,
+                                    наносить на лоб, веки, шею, декольте,
+                                     носогубные складки.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+                <div class="reviews__slider__button-left"></div>
+                <div class="reviews__slider__button-right"></div>
+            </div>
+            
+        </section>
+
+        <section class="sertifications">
+            <div class="container">
+                <div class="sertifications__wrapper">
+                    <h2>Наши сертификаты</h2>
+                    <div class="sertifications__elements">
+                        <div class="sertifications__element">
+                            <img src="./assets/images/sertification-iamge1.png" alt="">
+                            <p>Концепция
+                                Транспортировки
+                                Питательных веществ
+                                (Патент на технологию)</p>
+                        </div>
+                        <div class="sertifications__element">
+                            <img src="./assets/images/sertification-iamge2.png" alt="">
+                            <p>Независимая
+                                немецкая
+                                лаборатория TÜV
+                                SÜD</p>
+                        </div>
+                        <div class="sertifications__element">
+                            <img src="./assets/images/sertification-iamge3.png" alt="">
+                            <p>«Кельнский лист».
+                                Контроль качества
+                                продуктов
+                                в Высшей Спортивной
+                                Школе г. Кельна</p>
+                        </div>
+                        <div class="sertifications__element">
+                            <img src="./assets/images/sertification-iamge4.png" alt="">
+                            <p>Сертификат<br>
+                                HALAL
+                                </p>
+                        </div>
+                        <div class="sertifications__element">
+                            <img src="./assets/images/sertification-iamge5.png" alt="">
+                            <p>Международный<br>сертификат<br>
+                                качества</p>
+                        </div>
+                        <div class="sertifications__element">
+                            <img src="./assets/images/sertification-iamge6.png" alt="">
+                            <p>Люксембургский институт
+                                науки и технологии LIST </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -400,7 +615,84 @@
 
     
     <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                
+                <div class="footer__offer">
+                    <div class="footer__offer__left">
+                        <h1 class="footer__offer__left__h">Поверните время <span class="red-span">вспять!</span> </h1>
+                        <p class="footer__offer__left__p" >Испытайте неповторимые ощущения совершенства и моментальный эффект на Вашей коже</p>
+                        <div class="footer__image-wrapper">
+                            <img src="./assets/images/product-image.png" alt="product-image">
+                        </div>
+                    </div>
+                    <div class="footer__offer__right box-shadow">
+                        <h3>Внимание.Акция!</h3>
+                        <p class="footer__offer__right__p">Осталось <span class="red-span bold">18</span> акционных упаковок</p>
+                        <p class="footer__offer__right__time">00:03:01:05</p>
+                        <div class="footer__offer__right__time-units">
+                            <span class="time-unit">Дней</span>   
+                            <span class="time-unit">Часов</span>
+                            <span class="time-unit">Минут</span>
+                            <span class="time-unit">Секунд</span>
+                        </div> 
+                        <div class="footer__offer__right__price box-shadow">
+                            <span class="footer__offer__right__price--normal">
+                                Обычная цена
+                                <span class="price-number--left">8000р</span>
+                            </span>
 
+                            <span class="footer__offer__right__price--discount">
+                                Цена со скидкой
+                                <span class="price-number--right">5000р</span>
+                            </span>
+                        </div>
+
+                        <form class="form" action="#">
+                            <label>
+                                <input class="form-input" type="text" placeholder="Ваше имя">
+                            </label>
+                            <label for="">
+                                <input class="form-input" type="text" placeholder="Ваш номер">
+                            </label>
+                            <button class="button-gradient box-shadow">ЗАКАЗАТЬ СО СКИДКОЙ</button>
+                            
+                            <input class="form-radio" id="agreement-bottom" type="checkbox">
+                            <label class="agreement" for="agreement-bottom">
+                                <p>Я даю согласие на обработку персональных данных</p> 
+                            </label>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="./assets/images/logo-fit-2.png" alt="FitLine">
+                </div>
+
+                <div class="top__call">
+                    <span class="red-span call-number">
+                        8 800 888 88 88 
+                    </span>
+                    <button class="call-request">
+                        Обратный звонок
+                    </button>
+                </div>
+                
+            </div>
+            <div class="footer__bottom">
+                <p>Продолжая использовать наш сайт, вы даете согласие на
+                    обработку файлов Cookies и других пользовательских данных,
+                    в соответствии с Политикой конфиденциальности.<br>
+                    ИП лалала А.А. ОГРНИП 317010500000048 ИНН 010511295801
+                    г. Краснодар, ул. лалала,50.</p>
+            </div> 
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
