@@ -65,6 +65,10 @@ body {
   counter-reset: one;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 header {
   margin: 0 auto;
   background-image: url(../assets/images/headerbg.png);
@@ -620,13 +624,14 @@ footer {
   border: 1.5px solid var(--red);
   color: var(--red);
   margin: 0;
-  padding: 0;
+  padding: 12px 0;
   width: 10.8125rem;
   height: 2.875rem;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
+  text-decoration: none;
   background: rgba(169, 169, 169, 0.4);
 }
 
@@ -742,7 +747,7 @@ footer {
   letter-spacing: 0em;
   text-align: center;
   position: absolute;
-  background-image: url(/assets/images/list-marker-big.png);
+  background-image: url(../assets/images/list-marker-big.png);
   width: 60px;
   height: 60px;
   right: 212px;
@@ -961,7 +966,7 @@ footer {
   letter-spacing: 0em;
   text-align: center;
   position: absolute;
-  background-image: url(/assets/images/list-marker-big.png);
+  background-image: url(../assets/images/list-marker-big.png);
   width: 60px;
   height: 60px;
 }
@@ -1345,4 +1350,60 @@ footer {
   letter-spacing: 0em;
   text-align: center;
   color: #545454;
+}
+
+.back-call {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+.back-call.open {
+  opacity: 1;
+  visibility: visible;
+}
+.back-call__body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+.back-call__content {
+  position: relative;
+  background-color: var(--white);
+  border-radius: 15px;
+  width: 431px;
+  padding: 36px 47px;
+  text-align: center;
+}
+.back-call__content form {
+  margin-bottom: 0;
+}
+.back-call__content h3 {
+  margin-bottom: 30px;
+}
+.back-call__content .back-call__text {
+  margin-bottom: 70px;
+}
+.back-call__content .button-gradient {
+  margin-top: 19px;
+  margin-bottom: 17%;
+}
+.back-call__close::before {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/images/modal-close-button.png");
+  width: 27px;
+  height: 27px;
+  top: 17px;
+  right: 21px;
 }/*# sourceMappingURL=styles.css.map */
