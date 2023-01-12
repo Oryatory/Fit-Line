@@ -250,13 +250,14 @@
         border: 1.5px solid var(--red);  
         color: var(--red);
         margin: 0;
-        padding: 0;
+        padding: 12px 0;
         width: u.rem(173);
         height: u.rem(46);
         text-align: center;
         font-size: 16px;
         font-weight: 600;
         line-height: 22px;
+        text-decoration: none;
         background: rgba(169, 169, 169, 0.4);
     }
 }

@@ -5,6 +5,10 @@ body {
   counter-reset: one;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 header {
   margin: 0 auto;
   background-image: url(../assets/images/headerbg.png);

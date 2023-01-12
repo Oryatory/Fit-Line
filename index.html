@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>FitLine - поверните время вспять!</title>
 </head>
-<body>
+<body class="wrapper">
     <header>
         <div class="container">
             <div class="header__wrapper">
@@ -21,9 +21,9 @@
                         <span class="red-span call-number">
                             8 800 888 88 88 
                         </span>
-                        <button class="call-request">
+                        <a href="#back-call" class="call-request modal-link">
                             Обратный звонок
-                        </button>
+                        </a>
                     </div>
                     
                 </div>
@@ -676,9 +676,9 @@
                     <span class="red-span call-number">
                         8 800 888 88 88 
                     </span>
-                    <button class="call-request">
+                    <a href="#back-call" class="call-request modal-link">
                         Обратный звонок
-                    </button>
+                    </a>
                 </div>
                 
             </div>
@@ -691,8 +691,31 @@
             </div> 
         </div>
     </footer>
-
+    <div id="back-call" class="modal back-call">
+        <div class="back-call__body">
+            <div class="back-call__content modal__content box-shadow">
+                <a href="#" class="back-call__close modal-close"></a>
+                <h3>Оставьте заявку прямо сейчас</h3>
+                <p class="back-call__text">Наш оператор свяжется с Вами для оформления заказа</p>
+                <form class="form" action="#">
+                    <label>
+                        <input class="form-input" type="text" placeholder="Ваше имя">
+                    </label>
+                    <label for="">
+                        <input class="form-input" type="text" placeholder="Ваш номер">
+                    </label>
+                    <button class="button-gradient box-shadow">ЗАКАЗАТЬ СО СКИДКОЙ</button>
+                    
+                    <input class="form-radio" id="agreement-modal" type="checkbox">
+                    <label class="agreement" for="agreement-modal">
+                        <p>Я даю согласие на обработку персональных данных</p> 
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/sliders.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
