@@ -206,13 +206,22 @@
     margin-bottom: 11px;
     text-align: center;
     font-size: 14px;
+    display: block;
     font-weight: 700;
+    padding: 20px 80px;
     color: var(--white);
     max-width: u.rem(335);
     width: 100%;
     height: u.rem(58);
     border: none;
     cursor: pointer;
+    text-decoration: none;
+
+    &--ingredients {
+        padding: 20px 40px;
+        position: relative;
+        margin-left: auto;
+    }
 }
 
 .agreement{

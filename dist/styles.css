@@ -581,13 +581,21 @@ footer {
   margin-bottom: 11px;
   text-align: center;
   font-size: 14px;
+  display: block;
   font-weight: 700;
+  padding: 20px 80px;
   color: var(--white);
   max-width: 20.9375rem;
   width: 100%;
   height: 3.625rem;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+}
+.button-gradient--ingredients {
+  padding: 20px 40px;
+  position: relative;
+  margin-left: auto;
 }
 
 .agreement {
@@ -1399,6 +1407,135 @@ footer {
   margin-bottom: 17%;
 }
 .back-call__close::before {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/images/modal-close-button.png");
+  width: 27px;
+  height: 27px;
+  top: 17px;
+  right: 21px;
+}
+
+.sucsess {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 6;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+.sucsess.open {
+  opacity: 1;
+  visibility: visible;
+}
+.sucsess__body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+.sucsess__content {
+  position: relative;
+  background-color: var(--white);
+  border-radius: 15px;
+  width: 431px;
+  padding: 36px 47px;
+  text-align: center;
+}
+.sucsess__content h3 {
+  margin-bottom: 30px;
+  color: var(--red);
+}
+.sucsess__content img {
+  margin: 0 auto;
+  position: relative;
+  left: -20px;
+}
+.sucsess__text {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 211px;
+}
+.sucsess__close::before {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/images/modal-close-button.png");
+  width: 27px;
+  height: 27px;
+  top: 17px;
+  right: 21px;
+}
+
+.full-ingredients {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+.full-ingredients.open {
+  opacity: 1;
+  visibility: visible;
+}
+.full-ingredients__body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+.full-ingredients__content {
+  position: relative;
+  background-color: var(--white);
+  border-radius: 15px;
+  width: 751px;
+  padding: 36px 47px;
+  padding-bottom: 48px;
+  text-align: center;
+  max-height: 95vh;
+}
+.full-ingredients__content h3 {
+  margin-bottom: 38px;
+  color: var(--purple);
+}
+.full-ingredients__content .button-gradient {
+  margin: 0 auto;
+}
+.full-ingredients__text {
+  margin: 0 auto;
+  margin-bottom: 55px;
+  text-align: left;
+  max-height: calc(65vh - 58px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.full-ingredients__text::-webkit-scrollbar {
+  width: 32px;
+}
+.full-ingredients__text::-webkit-scrollbar-track {
+  box-shadow: inset 0px 4px 20px #CAE5FF;
+  border-radius: 30px;
+}
+.full-ingredients__text::-webkit-scrollbar-thumb {
+  border: 6px solid rgb(243, 249, 255);
+  border-radius: 30px;
+  background: #594272;
+}
+.full-ingredients__close::before {
   content: "";
   position: absolute;
   background-image: url("../assets/images/modal-close-button.png");
