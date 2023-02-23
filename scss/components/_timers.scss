@@ -1,0 +1,20 @@
+@use "../util" as u;
+
+.deadline-format {
+  color: var(--red);
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+  h4 {
+    font-size: clamp(u.rem(36), 4vw, u.rem(48));
+    line-height: u.rem(65.37);
+    font-weight: 700;
+    color: var(--red);
+    margin: 0;
+  }
+}
+
+.deadline-format:not(:last-of-type) .offer__right__time-unit {
+  margin-left: u.rem(-8);
+}

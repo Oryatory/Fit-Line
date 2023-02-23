@@ -1,36 +1,46 @@
-@use '../util' as u;
+@use "../util" as u;
 
 h1,
 h2,
 h3 {
-    margin: 0;
-}
-
-p{
-    margin: 0;
+  margin: 0;
 }
 
 h1 {
-    font-weight: 700;
-    font-size: u.rem(64);
-    line-height: u.rem(69.56);
+  font-weight: 700;
+  font-size: clamp(u.rem(26), 6vw, u.rem(64));
+  line-height: clamp(u.rem(28.26), 6vw, u.rem(69.56));
 }
 
 h2 {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 39px;
-    letter-spacing: 0em;
-    color: var(--purple);
+  font-size: clamp(u.rem(18), 3vw, u.rem(36));
+  font-weight: 700;
+  line-height: clamp(u.rem(19.56), 3vw, u.rem(49.03));
+  letter-spacing: 0em;
+  color: var(--purple);
 }
 
-h3{
-    font-weight: 700;
-    font-size: u.rem(32);
-    line-height: u.rem(43.58);
+h3 {
+  font-weight: 700;
+  font-size: clamp(u.rem(18), 2.5vw, u.rem(32));
+  line-height: clamp(u.rem(24.51), 2.5vw, u.rem(43.58));
 }
 
-p {
-    font-size: u.rem(16);
-    line-height: u.rem(21.79);
+h4 {
+  font-size: clamp(u.rem(12), 2vw, u.rem(24));
+  line-height: clamp(u.rem(14), 2vw, u.rem(28));
+}
+
+h5 {
+  font-size: clamp(u.rem(9), u.rem(14), u.rem(18));
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: clamp(u.rem(16), 2vw, u.rem(32));
+}
+
+p,
+li {
+  margin: 0;
+  font-size: clamp(u.rem(11), 2.5vw, u.rem(16));
+  line-height: clamp(u.rem(14.98), 2.5vw, u.rem(21.79));
 }
